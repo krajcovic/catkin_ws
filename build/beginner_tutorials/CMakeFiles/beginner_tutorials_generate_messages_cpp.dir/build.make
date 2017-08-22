@@ -55,6 +55,7 @@ include beginner_tutorials/CMakeFiles/beginner_tutorials_generate_messages_cpp.d
 
 beginner_tutorials/CMakeFiles/beginner_tutorials_generate_messages_cpp: /home/krajcovic/workspace/ros/catkin_ws/devel/include/beginner_tutorials/Num.h
 beginner_tutorials/CMakeFiles/beginner_tutorials_generate_messages_cpp: /home/krajcovic/workspace/ros/catkin_ws/devel/include/beginner_tutorials/User.h
+beginner_tutorials/CMakeFiles/beginner_tutorials_generate_messages_cpp: /home/krajcovic/workspace/ros/catkin_ws/devel/include/beginner_tutorials/AddTwoInts.h
 
 
 /home/krajcovic/workspace/ros/catkin_ws/devel/include/beginner_tutorials/Num.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
@@ -69,9 +70,17 @@ beginner_tutorials/CMakeFiles/beginner_tutorials_generate_messages_cpp: /home/kr
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/krajcovic/workspace/ros/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating C++ code from beginner_tutorials/User.msg"
 	cd /home/krajcovic/workspace/ros/catkin_ws/build/beginner_tutorials && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/krajcovic/workspace/ros/catkin_ws/src/beginner_tutorials/msg/User.msg -Ibeginner_tutorials:/home/krajcovic/workspace/ros/catkin_ws/src/beginner_tutorials/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p beginner_tutorials -o /home/krajcovic/workspace/ros/catkin_ws/devel/include/beginner_tutorials -e /opt/ros/kinetic/share/gencpp/cmake/..
 
+/home/krajcovic/workspace/ros/catkin_ws/devel/include/beginner_tutorials/AddTwoInts.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
+/home/krajcovic/workspace/ros/catkin_ws/devel/include/beginner_tutorials/AddTwoInts.h: /home/krajcovic/workspace/ros/catkin_ws/src/beginner_tutorials/srv/AddTwoInts.srv
+/home/krajcovic/workspace/ros/catkin_ws/devel/include/beginner_tutorials/AddTwoInts.h: /opt/ros/kinetic/share/gencpp/msg.h.template
+/home/krajcovic/workspace/ros/catkin_ws/devel/include/beginner_tutorials/AddTwoInts.h: /opt/ros/kinetic/share/gencpp/srv.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/krajcovic/workspace/ros/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating C++ code from beginner_tutorials/AddTwoInts.srv"
+	cd /home/krajcovic/workspace/ros/catkin_ws/build/beginner_tutorials && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/krajcovic/workspace/ros/catkin_ws/src/beginner_tutorials/srv/AddTwoInts.srv -Ibeginner_tutorials:/home/krajcovic/workspace/ros/catkin_ws/src/beginner_tutorials/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p beginner_tutorials -o /home/krajcovic/workspace/ros/catkin_ws/devel/include/beginner_tutorials -e /opt/ros/kinetic/share/gencpp/cmake/..
+
 beginner_tutorials_generate_messages_cpp: beginner_tutorials/CMakeFiles/beginner_tutorials_generate_messages_cpp
 beginner_tutorials_generate_messages_cpp: /home/krajcovic/workspace/ros/catkin_ws/devel/include/beginner_tutorials/Num.h
 beginner_tutorials_generate_messages_cpp: /home/krajcovic/workspace/ros/catkin_ws/devel/include/beginner_tutorials/User.h
+beginner_tutorials_generate_messages_cpp: /home/krajcovic/workspace/ros/catkin_ws/devel/include/beginner_tutorials/AddTwoInts.h
 beginner_tutorials_generate_messages_cpp: beginner_tutorials/CMakeFiles/beginner_tutorials_generate_messages_cpp.dir/build.make
 
 .PHONY : beginner_tutorials_generate_messages_cpp

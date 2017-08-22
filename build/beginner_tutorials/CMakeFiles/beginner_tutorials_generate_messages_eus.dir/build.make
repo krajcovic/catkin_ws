@@ -55,6 +55,7 @@ include beginner_tutorials/CMakeFiles/beginner_tutorials_generate_messages_eus.d
 
 beginner_tutorials/CMakeFiles/beginner_tutorials_generate_messages_eus: /home/krajcovic/workspace/ros/catkin_ws/devel/share/roseus/ros/beginner_tutorials/msg/Num.l
 beginner_tutorials/CMakeFiles/beginner_tutorials_generate_messages_eus: /home/krajcovic/workspace/ros/catkin_ws/devel/share/roseus/ros/beginner_tutorials/msg/User.l
+beginner_tutorials/CMakeFiles/beginner_tutorials_generate_messages_eus: /home/krajcovic/workspace/ros/catkin_ws/devel/share/roseus/ros/beginner_tutorials/srv/AddTwoInts.l
 beginner_tutorials/CMakeFiles/beginner_tutorials_generate_messages_eus: /home/krajcovic/workspace/ros/catkin_ws/devel/share/roseus/ros/beginner_tutorials/manifest.l
 
 
@@ -68,13 +69,19 @@ beginner_tutorials/CMakeFiles/beginner_tutorials_generate_messages_eus: /home/kr
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/krajcovic/workspace/ros/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating EusLisp code from beginner_tutorials/User.msg"
 	cd /home/krajcovic/workspace/ros/catkin_ws/build/beginner_tutorials && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/krajcovic/workspace/ros/catkin_ws/src/beginner_tutorials/msg/User.msg -Ibeginner_tutorials:/home/krajcovic/workspace/ros/catkin_ws/src/beginner_tutorials/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p beginner_tutorials -o /home/krajcovic/workspace/ros/catkin_ws/devel/share/roseus/ros/beginner_tutorials/msg
 
+/home/krajcovic/workspace/ros/catkin_ws/devel/share/roseus/ros/beginner_tutorials/srv/AddTwoInts.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
+/home/krajcovic/workspace/ros/catkin_ws/devel/share/roseus/ros/beginner_tutorials/srv/AddTwoInts.l: /home/krajcovic/workspace/ros/catkin_ws/src/beginner_tutorials/srv/AddTwoInts.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/krajcovic/workspace/ros/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating EusLisp code from beginner_tutorials/AddTwoInts.srv"
+	cd /home/krajcovic/workspace/ros/catkin_ws/build/beginner_tutorials && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/krajcovic/workspace/ros/catkin_ws/src/beginner_tutorials/srv/AddTwoInts.srv -Ibeginner_tutorials:/home/krajcovic/workspace/ros/catkin_ws/src/beginner_tutorials/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p beginner_tutorials -o /home/krajcovic/workspace/ros/catkin_ws/devel/share/roseus/ros/beginner_tutorials/srv
+
 /home/krajcovic/workspace/ros/catkin_ws/devel/share/roseus/ros/beginner_tutorials/manifest.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/krajcovic/workspace/ros/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating EusLisp manifest code for beginner_tutorials"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/krajcovic/workspace/ros/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating EusLisp manifest code for beginner_tutorials"
 	cd /home/krajcovic/workspace/ros/catkin_ws/build/beginner_tutorials && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py -m -o /home/krajcovic/workspace/ros/catkin_ws/devel/share/roseus/ros/beginner_tutorials beginner_tutorials std_msgs
 
 beginner_tutorials_generate_messages_eus: beginner_tutorials/CMakeFiles/beginner_tutorials_generate_messages_eus
 beginner_tutorials_generate_messages_eus: /home/krajcovic/workspace/ros/catkin_ws/devel/share/roseus/ros/beginner_tutorials/msg/Num.l
 beginner_tutorials_generate_messages_eus: /home/krajcovic/workspace/ros/catkin_ws/devel/share/roseus/ros/beginner_tutorials/msg/User.l
+beginner_tutorials_generate_messages_eus: /home/krajcovic/workspace/ros/catkin_ws/devel/share/roseus/ros/beginner_tutorials/srv/AddTwoInts.l
 beginner_tutorials_generate_messages_eus: /home/krajcovic/workspace/ros/catkin_ws/devel/share/roseus/ros/beginner_tutorials/manifest.l
 beginner_tutorials_generate_messages_eus: beginner_tutorials/CMakeFiles/beginner_tutorials_generate_messages_eus.dir/build.make
 

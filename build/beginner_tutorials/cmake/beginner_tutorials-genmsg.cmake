@@ -1,6 +1,6 @@
 # generated from genmsg/cmake/pkg-genmsg.cmake.em
 
-message(STATUS "beginner_tutorials: 2 messages, 0 services")
+message(STATUS "beginner_tutorials: 2 messages, 1 services")
 
 set(MSG_I_FLAGS "-Ibeginner_tutorials:/home/krajcovic/workspace/ros/catkin_ws/src/beginner_tutorials/msg;-Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg")
 
@@ -16,6 +16,11 @@ add_custom_target(beginner_tutorials_generate_messages ALL)
 # verify that message/service dependencies have not changed since configure
 
 
+
+get_filename_component(_filename "/home/krajcovic/workspace/ros/catkin_ws/src/beginner_tutorials/srv/AddTwoInts.srv" NAME_WE)
+add_custom_target(_beginner_tutorials_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "beginner_tutorials" "/home/krajcovic/workspace/ros/catkin_ws/src/beginner_tutorials/srv/AddTwoInts.srv" ""
+)
 
 get_filename_component(_filename "/home/krajcovic/workspace/ros/catkin_ws/src/beginner_tutorials/msg/Num.msg" NAME_WE)
 add_custom_target(_beginner_tutorials_generate_messages_check_deps_${_filename}
@@ -47,6 +52,12 @@ _generate_msg_cpp(beginner_tutorials
 )
 
 ### Generating Services
+_generate_srv_cpp(beginner_tutorials
+  "/home/krajcovic/workspace/ros/catkin_ws/src/beginner_tutorials/srv/AddTwoInts.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/beginner_tutorials
+)
 
 ### Generating Module File
 _generate_module_cpp(beginner_tutorials
@@ -60,6 +71,8 @@ add_custom_target(beginner_tutorials_generate_messages_cpp
 add_dependencies(beginner_tutorials_generate_messages beginner_tutorials_generate_messages_cpp)
 
 # add dependencies to all check dependencies targets
+get_filename_component(_filename "/home/krajcovic/workspace/ros/catkin_ws/src/beginner_tutorials/srv/AddTwoInts.srv" NAME_WE)
+add_dependencies(beginner_tutorials_generate_messages_cpp _beginner_tutorials_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/krajcovic/workspace/ros/catkin_ws/src/beginner_tutorials/msg/Num.msg" NAME_WE)
 add_dependencies(beginner_tutorials_generate_messages_cpp _beginner_tutorials_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/krajcovic/workspace/ros/catkin_ws/src/beginner_tutorials/msg/User.msg" NAME_WE)
@@ -88,6 +101,12 @@ _generate_msg_eus(beginner_tutorials
 )
 
 ### Generating Services
+_generate_srv_eus(beginner_tutorials
+  "/home/krajcovic/workspace/ros/catkin_ws/src/beginner_tutorials/srv/AddTwoInts.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/beginner_tutorials
+)
 
 ### Generating Module File
 _generate_module_eus(beginner_tutorials
@@ -101,6 +120,8 @@ add_custom_target(beginner_tutorials_generate_messages_eus
 add_dependencies(beginner_tutorials_generate_messages beginner_tutorials_generate_messages_eus)
 
 # add dependencies to all check dependencies targets
+get_filename_component(_filename "/home/krajcovic/workspace/ros/catkin_ws/src/beginner_tutorials/srv/AddTwoInts.srv" NAME_WE)
+add_dependencies(beginner_tutorials_generate_messages_eus _beginner_tutorials_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/krajcovic/workspace/ros/catkin_ws/src/beginner_tutorials/msg/Num.msg" NAME_WE)
 add_dependencies(beginner_tutorials_generate_messages_eus _beginner_tutorials_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/krajcovic/workspace/ros/catkin_ws/src/beginner_tutorials/msg/User.msg" NAME_WE)
@@ -129,6 +150,12 @@ _generate_msg_lisp(beginner_tutorials
 )
 
 ### Generating Services
+_generate_srv_lisp(beginner_tutorials
+  "/home/krajcovic/workspace/ros/catkin_ws/src/beginner_tutorials/srv/AddTwoInts.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/beginner_tutorials
+)
 
 ### Generating Module File
 _generate_module_lisp(beginner_tutorials
@@ -142,6 +169,8 @@ add_custom_target(beginner_tutorials_generate_messages_lisp
 add_dependencies(beginner_tutorials_generate_messages beginner_tutorials_generate_messages_lisp)
 
 # add dependencies to all check dependencies targets
+get_filename_component(_filename "/home/krajcovic/workspace/ros/catkin_ws/src/beginner_tutorials/srv/AddTwoInts.srv" NAME_WE)
+add_dependencies(beginner_tutorials_generate_messages_lisp _beginner_tutorials_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/krajcovic/workspace/ros/catkin_ws/src/beginner_tutorials/msg/Num.msg" NAME_WE)
 add_dependencies(beginner_tutorials_generate_messages_lisp _beginner_tutorials_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/krajcovic/workspace/ros/catkin_ws/src/beginner_tutorials/msg/User.msg" NAME_WE)
@@ -170,6 +199,12 @@ _generate_msg_nodejs(beginner_tutorials
 )
 
 ### Generating Services
+_generate_srv_nodejs(beginner_tutorials
+  "/home/krajcovic/workspace/ros/catkin_ws/src/beginner_tutorials/srv/AddTwoInts.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/beginner_tutorials
+)
 
 ### Generating Module File
 _generate_module_nodejs(beginner_tutorials
@@ -183,6 +218,8 @@ add_custom_target(beginner_tutorials_generate_messages_nodejs
 add_dependencies(beginner_tutorials_generate_messages beginner_tutorials_generate_messages_nodejs)
 
 # add dependencies to all check dependencies targets
+get_filename_component(_filename "/home/krajcovic/workspace/ros/catkin_ws/src/beginner_tutorials/srv/AddTwoInts.srv" NAME_WE)
+add_dependencies(beginner_tutorials_generate_messages_nodejs _beginner_tutorials_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/krajcovic/workspace/ros/catkin_ws/src/beginner_tutorials/msg/Num.msg" NAME_WE)
 add_dependencies(beginner_tutorials_generate_messages_nodejs _beginner_tutorials_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/krajcovic/workspace/ros/catkin_ws/src/beginner_tutorials/msg/User.msg" NAME_WE)
@@ -211,6 +248,12 @@ _generate_msg_py(beginner_tutorials
 )
 
 ### Generating Services
+_generate_srv_py(beginner_tutorials
+  "/home/krajcovic/workspace/ros/catkin_ws/src/beginner_tutorials/srv/AddTwoInts.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/beginner_tutorials
+)
 
 ### Generating Module File
 _generate_module_py(beginner_tutorials
@@ -224,6 +267,8 @@ add_custom_target(beginner_tutorials_generate_messages_py
 add_dependencies(beginner_tutorials_generate_messages beginner_tutorials_generate_messages_py)
 
 # add dependencies to all check dependencies targets
+get_filename_component(_filename "/home/krajcovic/workspace/ros/catkin_ws/src/beginner_tutorials/srv/AddTwoInts.srv" NAME_WE)
+add_dependencies(beginner_tutorials_generate_messages_py _beginner_tutorials_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/krajcovic/workspace/ros/catkin_ws/src/beginner_tutorials/msg/Num.msg" NAME_WE)
 add_dependencies(beginner_tutorials_generate_messages_py _beginner_tutorials_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/krajcovic/workspace/ros/catkin_ws/src/beginner_tutorials/msg/User.msg" NAME_WE)

@@ -55,6 +55,7 @@ include beginner_tutorials/CMakeFiles/beginner_tutorials_generate_messages_nodej
 
 beginner_tutorials/CMakeFiles/beginner_tutorials_generate_messages_nodejs: /home/krajcovic/workspace/ros/catkin_ws/devel/share/gennodejs/ros/beginner_tutorials/msg/Num.js
 beginner_tutorials/CMakeFiles/beginner_tutorials_generate_messages_nodejs: /home/krajcovic/workspace/ros/catkin_ws/devel/share/gennodejs/ros/beginner_tutorials/msg/User.js
+beginner_tutorials/CMakeFiles/beginner_tutorials_generate_messages_nodejs: /home/krajcovic/workspace/ros/catkin_ws/devel/share/gennodejs/ros/beginner_tutorials/srv/AddTwoInts.js
 
 
 /home/krajcovic/workspace/ros/catkin_ws/devel/share/gennodejs/ros/beginner_tutorials/msg/Num.js: /opt/ros/kinetic/lib/gennodejs/gen_nodejs.py
@@ -67,9 +68,15 @@ beginner_tutorials/CMakeFiles/beginner_tutorials_generate_messages_nodejs: /home
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/krajcovic/workspace/ros/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Javascript code from beginner_tutorials/User.msg"
 	cd /home/krajcovic/workspace/ros/catkin_ws/build/beginner_tutorials && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/krajcovic/workspace/ros/catkin_ws/src/beginner_tutorials/msg/User.msg -Ibeginner_tutorials:/home/krajcovic/workspace/ros/catkin_ws/src/beginner_tutorials/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p beginner_tutorials -o /home/krajcovic/workspace/ros/catkin_ws/devel/share/gennodejs/ros/beginner_tutorials/msg
 
+/home/krajcovic/workspace/ros/catkin_ws/devel/share/gennodejs/ros/beginner_tutorials/srv/AddTwoInts.js: /opt/ros/kinetic/lib/gennodejs/gen_nodejs.py
+/home/krajcovic/workspace/ros/catkin_ws/devel/share/gennodejs/ros/beginner_tutorials/srv/AddTwoInts.js: /home/krajcovic/workspace/ros/catkin_ws/src/beginner_tutorials/srv/AddTwoInts.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/krajcovic/workspace/ros/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Javascript code from beginner_tutorials/AddTwoInts.srv"
+	cd /home/krajcovic/workspace/ros/catkin_ws/build/beginner_tutorials && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/krajcovic/workspace/ros/catkin_ws/src/beginner_tutorials/srv/AddTwoInts.srv -Ibeginner_tutorials:/home/krajcovic/workspace/ros/catkin_ws/src/beginner_tutorials/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p beginner_tutorials -o /home/krajcovic/workspace/ros/catkin_ws/devel/share/gennodejs/ros/beginner_tutorials/srv
+
 beginner_tutorials_generate_messages_nodejs: beginner_tutorials/CMakeFiles/beginner_tutorials_generate_messages_nodejs
 beginner_tutorials_generate_messages_nodejs: /home/krajcovic/workspace/ros/catkin_ws/devel/share/gennodejs/ros/beginner_tutorials/msg/Num.js
 beginner_tutorials_generate_messages_nodejs: /home/krajcovic/workspace/ros/catkin_ws/devel/share/gennodejs/ros/beginner_tutorials/msg/User.js
+beginner_tutorials_generate_messages_nodejs: /home/krajcovic/workspace/ros/catkin_ws/devel/share/gennodejs/ros/beginner_tutorials/srv/AddTwoInts.js
 beginner_tutorials_generate_messages_nodejs: beginner_tutorials/CMakeFiles/beginner_tutorials_generate_messages_nodejs.dir/build.make
 
 .PHONY : beginner_tutorials_generate_messages_nodejs
