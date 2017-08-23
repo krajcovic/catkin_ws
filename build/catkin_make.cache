@@ -1,2 +1,2 @@
 beginner_tutorials
--DCATKIN_DEVEL_PREFIX=/home/krajcovic/workspace/ros/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/krajcovic/workspace/ros/catkin_ws/install -G Unix Makefiles
+-GEclipse CDT4 - Unix Makefiles -DCATKIN_DEVEL_PREFIX=/home/krajcovic/workspace/ros/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/krajcovic/workspace/ros/catkin_ws/install
