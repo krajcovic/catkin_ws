@@ -7,3 +7,4 @@
 # new environment variables
 
 # modified environment variables
+export PWD="/home/krajcovic/workspace/ros/catkin_ws/build"

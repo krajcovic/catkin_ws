@@ -1,2 +1,2 @@
-beginner_tutorials
--GEclipse CDT4 - Unix Makefiles -DCATKIN_DEVEL_PREFIX=/home/krajcovic/workspace/ros/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/krajcovic/workspace/ros/catkin_ws/install
+beginner_tutorials:dkr_utils
+-DCATKIN_DEVEL_PREFIX=/home/krajcovic/workspace/ros/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/krajcovic/workspace/ros/catkin_ws/install -G Unix Makefiles

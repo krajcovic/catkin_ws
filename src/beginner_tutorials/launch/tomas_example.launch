@@ -1,0 +1,14 @@
+<launch>
+	<machine address="10.0.0.1" evn-loader="opt/ros/hydro/en v.sh" name="Machine1"/>
+	<!-- Definice externí stanice.-->
+	<node machine="Machine1" name="Node1" pkg="package" type="node1.py">
+		<!-- Spouštění uzlu na externí stanici. -->
+		<rosparam command="load" file="$(find package)/robot.yaml"/>
+		<!--Nahrání parametr souboru na parametr server. -->
+	</node>
+	<node name="Node2" output="screen" pkg="package" respawn="true" type="node2">
+		<!-- Spuštění uzlu na lokální stanici-->
+		<param name="string_parameter" type="string" value="none"/>
+		<!-- Nahrání jednoho parametru na parametr server. -->
+	</node>
+</launch>
