@@ -1457,6 +1457,24 @@ clean: beginner_tutorials/CMakeFiles/beginner_tutorials_generate_messages_eus.di
 .PHONY : clean
 
 #=============================================================================
+# Directory level rules for directory dkr_utils
+
+# Convenience name for "all" pass in the directory.
+dkr_utils/all:
+
+.PHONY : dkr_utils/all
+
+# Convenience name for "clean" pass in the directory.
+dkr_utils/clean:
+
+.PHONY : dkr_utils/clean
+
+# Convenience name for "preinstall" pass in the directory.
+dkr_utils/preinstall:
+
+.PHONY : dkr_utils/preinstall
+
+#=============================================================================
 # Special targets to cleanup operation of make.
 
 # Special rule to run CMake to check the build system integrity.
